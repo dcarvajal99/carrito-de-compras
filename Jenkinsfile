@@ -48,6 +48,9 @@ pipeline {
           failure {
             notifySlack('Test')
           }
+           success {
+            notifySlack('Pipeline completo')
+          }
         }
       }
     }
